@@ -24,9 +24,18 @@
 # 安装依赖
 pip install lancedb numpy httpx
 
-# 设置 API Key
+# 设置 API Key（阿里云 DashScope）
 export DASHSCOPE_API_KEY="your_key"
 ```
+
+**API Key 获取方式**：
+- 平台：阿里云 [DashScope](https://dashscope.aliyun.com/)
+- 用途：文本嵌入（Embedding）服务，用于向量检索
+- 步骤：
+  1. 注册/登录阿里云账号
+  2. 进入 DashScope 控制台
+  3. 创建 API Key
+  4. 复制 Key 并设置环境变量
 
 ### 基础使用
 
@@ -234,10 +243,10 @@ reset_metrics()
 ### 环境变量
 
 ```bash
-# 必需
+# 必需 - 阿里云 DashScope API Key（用于文本嵌入）
 export DASHSCOPE_API_KEY="your_key"
 
-# 可选
+# 可选 - OpenMemBase 配置
 export OPENMEMBASE_DB_PATH="~/.copaw/openmembase"
 export OPENMEMBASE_EMBEDDING_PROVIDER="dashscope"
 export OPENMEMBASE_EMBEDDING_MODEL="text-embedding-v2"
@@ -245,9 +254,9 @@ export OPENMEMBASE_SIMILARITY_THRESHOLD="0.5"
 export OPENMEMBASE_ARCHIVE_ENABLED="true"
 export OPENMEMBASE_DEBUG="false"
 
-# 重排序（可选）
-export JINA_API_KEY="your_key"
-export COHERE_API_KEY="your_key"
+# 可选 - 重排序服务 API Key
+export JINA_API_KEY="your_key"      # Jina AI 重排序
+export COHERE_API_KEY="your_key"    # Cohere 重排序
 ```
 
 ### 配置文件
