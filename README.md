@@ -1,10 +1,10 @@
-# OpenMemBase - 企业级统一记忆数据库
+# OpenMemBase - 统一记忆数据库
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/copaw/openmembase)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Jerrylee2044/openmembase)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-> 开箱即用的企业级记忆数据库，整合 Memory-LanceDB 和 Project KB，为 CoPaw 提供统一的记忆管理能力。
+> 开箱即用的统一记忆数据库，整合 Memory-LanceDB 和 Project KB，为 CoPaw 提供统一的记忆管理能力。
 
 ## 特性
 
@@ -13,7 +13,7 @@
 - 🔍 **混合检索** - Vector + BM25 + Cross-Encoder 重排序
 - 📦 **自动归档** - 会话自动归档到项目知识库
 - 📊 **性能监控** - 完整的指标收集和分析
-- 🏢 **企业级** - 配置管理、错误处理、日志系统、类型安全
+- ⚙️ **灵活配置** - 支持环境变量、配置文件、代码配置
 - 🖥️ **CLI 工具** - 完整的命令行管理界面
 
 ## 快速开始
@@ -75,10 +75,8 @@ asyncio.run(main())
 
 ## 文档
 
-- [API 文档](docs/api.md)
-- [配置指南](docs/config.md)
-- [CLI 文档](docs/cli.md)
-- [架构设计](docs/architecture.md)
+- [SKILL.md](SKILL.md) - 完整使用文档
+- [STATUS.md](STATUS.md) - 项目状态报告
 
 ## CLI 使用
 

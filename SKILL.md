@@ -1,6 +1,6 @@
 ---
 name: openmembase
-description: 企业级统一记忆数据库 - 整合 Memory-LanceDB (会话记忆) + Project KB (项目知识库)
+description: 统一记忆数据库 - 整合 Memory-LanceDB (会话记忆) + Project KB (项目知识库)
 metadata:
   copaw:
     emoji: 🧠
@@ -9,9 +9,9 @@ metadata:
     category: "memory"
 ---
 
-# OpenMemBase - 企业级统一记忆数据库
+# OpenMemBase - 统一记忆数据库
 
-开箱即用的企业级 Skill，整合 Memory-LanceDB 和 Project KB，为 CoPaw 提供统一的记忆管理能力。
+开箱即用的统一记忆数据库 Skill，整合 Memory-LanceDB 和 Project KB，为 CoPaw 提供统一的记忆管理能力。
 
 ## 功能特性
 
@@ -22,9 +22,9 @@ metadata:
 - **自动归档**: 会话自动归档到项目知识库
 - **性能监控**: 完整的指标收集和分析
 
-### 企业级特性 🏢
-- **配置管理**: 环境变量 + 配置文件 + 代码配置
-- **错误处理**: 结构化异常体系，详细的错误信息
+### 工程特性 ⚙️
+- **灵活配置**: 支持环境变量、配置文件、代码配置
+- **完善错误处理**: 结构化异常体系，详细的错误信息
 - **日志系统**: 结构化日志，支持文件轮转和级别控制
 - **类型安全**: 完整的类型注解和数据模型
 - **CLI 工具**: 完整的命令行管理界面
@@ -379,7 +379,7 @@ export COHERE_API_KEY="your_key"
 openmembase/
 ├── __init__.py        # 模块入口，导出所有 API
 ├── core.py            # 核心管理器 (OpenMemBase 类)
-├── config.py          # 配置管理 (企业级配置系统)
+├── config.py          # 配置管理
 ├── types.py           # 类型定义 (数据模型、枚举)
 ├── exceptions.py      # 异常定义 (结构化错误处理)
 ├── logger.py          # 日志系统 (结构化日志)
