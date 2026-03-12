@@ -1,0 +1,8 @@
+# Core dependencies
+lancedb>=0.29.0
+numpy>=1.20.0
+httpx>=0.24.0
+
+# Optional dependencies for enhanced features
+# dashscope>=1.0.0  # For embedding API
+# jina>=3.0.0       # For reranking
